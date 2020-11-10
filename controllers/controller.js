@@ -1,3 +1,4 @@
+
 const data = [
     {id: 0, title:'premier',path:'/public/img/1.jpg'},
     {id: 1, title:'deuxieme',path:'/public/img/2.png'},
@@ -39,4 +40,9 @@ module.exports = {
                 
          
     },
+    new: function(req,res){
+        console.log(req.body)
+        var user = new User;
+        user = { username: req.body.username, email: req.body.email, password:req.body.password }
+    }
 }

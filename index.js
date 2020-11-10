@@ -8,16 +8,6 @@ let port = config.app.port;
 // on declare notre fichier de route
 let api = require('./routes/api');
 
-var redis = require('redis');
-var client = redis.createClient();
-
-client.on('connect', function() {
-    console.log('Redis client connected');
-});
-
-client.on('error', function (err) {
-    console.log('Something went wrong ' + err);
-});
 
 /**
  *   on regle a l'arrache les problême de CORS à la place de * on peux restreindre a une ou plusieur URL d'origin 

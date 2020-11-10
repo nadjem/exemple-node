@@ -10,6 +10,7 @@ let ctrl = require("../controllers/controller");
 //User routes ======================
 router.get("/all", ctrl.getAll);
 router.get("/one/:id", ctrl.getOne);
+router.post("/new", ctrl.new);
 /**
  * exemple des autres routes pour un REST mais inutile pour le tuto
     router.post("/new", ctrl.new);
