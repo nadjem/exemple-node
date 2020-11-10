@@ -6,7 +6,7 @@ const config = {
     db: {
       host: 'localhost',
       port: 6379,
-      name: 'dbRedis'
+      id: 1
     }
    };
    
