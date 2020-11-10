@@ -38,3 +38,11 @@
 - ./index.js 
 
     > le fichier du server.       
+---
+
+#### Routes:
+    ```
+    http://localhost:3000/api/one/2
+
+    http://localhost:3000/api/all
+    ```
